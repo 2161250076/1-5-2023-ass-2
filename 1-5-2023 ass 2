@@ -1,0 +1,21 @@
+c={}
+n=int(input('enter number of students:'))
+for i in range(1,n+1):
+    l=[]
+    sno=int(input('enter student number:'))
+    sname=input('enter student name:')
+    sclass=input('enter student class:')
+    college=input('enter college branch:')
+    pno=int(input('enter student phone number:'))
+    l.append(sname)
+    l.append(sclass)
+    l.append(college)
+    l.append(pno)
+    c[sno]=l
+print(c)
+sno=int(input('enter student name details:'))
+print('student name:',c[sno][0])
+print('student class:',c[sno][1])
+print('student college:',c[sno][2])
+print('student phone number:',c[sno][3])
+    
